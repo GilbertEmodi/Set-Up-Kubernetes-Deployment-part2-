@@ -5,7 +5,7 @@
 
 ---
 
-![Image](http://learn.nextwork.org/ecstatic_beige_calm_tarapirohe/uploads/aws-compute-eks2_45e6c3de5)
+![Image](https://github.com/GilbertEmodi/Set-Up-Kubernetes-Deployment-part2-/blob/main/eks2-architecture-complete.png)
 
 ---
 
@@ -19,7 +19,7 @@ In this project, I will prepare a backend app for Kubernetes deployment. This is
 
 ### Project reflection
 
-This project took me approximately 2 hours. The most challenging part was running into the AWS CLI errors in the begining. I had make sure the Linux environment was perfectly set up to interact with Docker and AWS services like EKS and ECR.
+This project took me approximately 1hours. The most challenging part was running into the AWS CLI errors in the begining. I had make sure the Linux environment was perfectly set up to interact with Docker and AWS services like EKS and ECR.
 
 Something new that I learnt from this experience was how to properly set up the AWS CLI to run linux commands that help streamline my Kubernetes cluster deployment.
 
@@ -33,7 +33,7 @@ To set up this project, I launched a Kubernetes cluster. Steps I took to do this
 
 Next, I retrieved the backend that I plan to deploy. An app's backend means the logic/brain that defines how the app "works". I retrieved backend code by cloning it from a GitHub repository.
 
-![Image](http://learn.nextwork.org/ecstatic_beige_calm_tarapirohe/uploads/aws-compute-eks2_1ebb86c71)
+![Image](https://github.com/GilbertEmodi/Set-Up-Kubernetes-Deployment-part2-/blob/main/1-Backend%20Cloned.JPG)
 
 ---
 
@@ -45,7 +45,7 @@ When I tried to build a Docker image of the backend, I ran into a permissions er
 
 To solve the permissions error, I added the ec2-user to the Docker group. The Docker group is a group in Linux systems that grant a user the permission to run docker commands, (like docker build).
 
-![Image](http://learn.nextwork.org/ecstatic_beige_calm_tarapirohe/uploads/aws-compute-eks2_45e6c3de5)
+![Image](https://github.com/GilbertEmodi/Set-Up-Kubernetes-Deployment-part2-/blob/main/2-Docker%20Image%20Building.JPG)
 
 ---
 
@@ -55,7 +55,7 @@ I'm using Amazon ECR in this project to store our container image. ECR is a good
 
 Container registries like Amazon ECR are great for Kubernetes deployment because I get to store tagged images from a single source of truth. Users and other services can pull my latest container image without any manual downloading required.
 
-![Image](http://learn.nextwork.org/ecstatic_beige_calm_tarapirohe/uploads/aws-compute-eks2_l2m3n4o5)
+![Image](https://github.com/GilbertEmodi/Set-Up-Kubernetes-Deployment-part2-/blob/main/3-ECR%20Repository.JPG)
 
 ---
 
